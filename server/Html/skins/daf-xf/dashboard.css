@@ -13,8 +13,8 @@ body {
 .truck-speed[data-type="meter"] {
   visibility: visible;
   position: absolute;
-  left: 498px;
-  top: 470px;
+  left: 350px;
+  top: 455px;
   width: 26px;
   height: 265px;
   background-image: url("images/arrow.png");
@@ -31,8 +31,8 @@ body {
 }
 .truck-engineRpm {
   position: absolute;
-  left: 1510px;
-  top: 470px;
+  left: 1650px;
+  top: 455px;
   width: 26px;
   height: 265px;
   background-image: url("images/arrow.png");
@@ -49,8 +49,8 @@ body {
 }
 .truck-fuel {
   position: absolute;
-  left: 595px;
-  top: 340px;
+  left: 470px;
+  top: 245px;
   width: 13px;
   height: 145px;
   background-image: url("images/arrow-s.png");
@@ -67,8 +67,8 @@ body {
 }
 .truck-waterTemperature {
   position: absolute;
-  left: 1430px;
-  top: 245px;
+  left: 1530px;
+  top: 140px;
   width: 13px;
   height: 145px;
   background-image: url("images/arrow-s2.png");
@@ -89,8 +89,8 @@ body {
   font-weight: bold;
   font-size: 70px;
   position: absolute;
-  left: 410px;
-  top: 770px;
+  left: 280px;
+  top: 810px;
   width: 190px;
   height: 66px;
   text-align: center;
@@ -99,10 +99,10 @@ body {
   color: #D8DFE5;
   font-family: Courier New, Courier, monospace;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 42px;
   position: absolute;
-  left: 1455px;
-  top: 770px;
+  left: 1600px;
+  top: 760px;
   width: 134px;
   height: 100px;
   text-align: center;
@@ -117,7 +117,7 @@ body {
   color: #D8DFE5;
   font-family: Courier New, Courier, monospace;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   position: absolute;
   left: 1080px;
   top: 805px;
@@ -128,8 +128,8 @@ body {
 .truck-blinkerLeftOn {
   background-image: url("images/blinker-left-off.png");
   position: absolute;
-  left: 400px;
-  top: 345px;
+  left: 215px;
+  top: 245px;
   width: 131px;
   height: 59px;
 }
@@ -139,8 +139,8 @@ body {
 .truck-blinkerRightOn {
   background-image: url("images/blinker-right-off.png");
   position: absolute;
-  left: 1528px;
-  top: 350px;
+  left: 1680px;
+  top: 245px;
   width: 131px;
   height: 59px;
 }
@@ -150,10 +150,10 @@ body {
 .truck-lightsBeamHighOn {
   background-image: url("images/highbeam-off.png");
   position: absolute;
-  left: 845px;
-  top: 720px;
-  width: 45px;
-  height: 35px;
+  left: 805px;
+  top: 700px;
+  width: 40px;
+  height: 23px;
 }
 .truck-lightsBeamHighOn.yes {
   background-image: url("images/highbeam-on.png");
@@ -161,8 +161,8 @@ body {
 .truck-lightsBeamLowOn {
   background-image: url("images/lowbeam-off.png");
   position: absolute;
-  left: 845px;
-  top: 680px;
+  left: 805px;
+  top: 660px;
   width: 45px;
   height: 35px;
 }
@@ -172,8 +172,8 @@ body {
 .truck-lightsParkingOn {
   background-image: url("images/parklights-off.png");
   position: absolute;
-  left: 845px;
-  top: 640px;
+  left: 805px;
+  top: 620px;
   width: 45px;
   height: 35px;
 }
@@ -184,9 +184,9 @@ body {
   color: #D8DFE5;
   font-family: Courier New, Courier, monospace;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   position: absolute;
-  left: 830px;
+  left: 800px;
   top: 770px;
   width: 134px;
   height: 100px;
@@ -195,8 +195,8 @@ body {
 .truck-parkBrakeOn {
   background-image: url("images/parkingbrake-off.png");
   position: absolute;
-  left: 1040px;
-  top: 645px;
+  left: 1000px;
+  top: 580px;
   width: 45px;
   height: 35px;
 }
@@ -206,23 +206,224 @@ body {
 .truck-airPressureWarningOn {
   background-image: url("images/warning-off.png");
   position: absolute;
-  left: 1080px;
-  top: 645px;
+  left: 1060px;
+  top: 580px;
   width: 45px;
   height: 35px;
 }
 .truck-airPressureWarningOn.yes {
   background-image: url("images/warning.png");
 }
+
+.truck-fuelWarningOn {
+/* background-image: url("images/fuel-warning.png"); */
+  position: absolute;
+  left: 395px;
+  top: 240px;
+  width: 45px;
+  height: 50px;
+}
+.truck-fuelWarningOn.yes {
+   background-image: url("images/fuel-warning.png");
+}
+
+
+
 .trailer-mass {
   color: #D8DFE5;
   font-family: Courier New, Courier, monospace;
   font-weight: bold;
   font-size: 30px;
   position: absolute;
-  left: 965px;
-  top: 600px;
+  left: 1015px;
+  top: 630px;
   width: 134px;
   height: 100px;
   text-align: right;
+}
+
+
+table._job {
+  border-collapse: collapse;
+  /* border: 1px solid #fff; */
+  font-family: Courier New, Courier, monospace;
+  font-size: 30px;
+  position: absolute;
+  left: 745px;
+  top: 300px;
+  width: 550px;
+  height: 80px;
+}
+table._job th {
+  color: #aaa;
+  width: 75px;
+  text-align: right;
+}
+table._job td {
+  padding-left: 10px;
+  text-align: left;
+}
+._jobSource,
+._jobDestionation {
+  color: #efbd3a;
+}
+.statusMessage {
+  color: #efbd3a;
+}
+.job-remainingTime {
+  color: #54d9a8;
+}
+._jobIncome {
+  color: #5dd954;
+}
+
+.truck-cruiseControlOn {
+  background-image: url("images/cruise-off.png");
+  position: absolute;
+  left: 270px;
+  top: 820px;
+  width: 48px;
+  height:42px;
+}
+.truck-cruiseControlOn.yes {
+  background-image: url("images/cruise-on.png");
+}
+
+.truck-cruiseControlSpeedRounded {
+  color: #fff;
+  font-family: Courier New, Courier, monospace;
+  font-weight: bold;
+  font-size: 32px;
+  position: absolute;
+  left: 210px;
+  top: 830px;
+  width: 62px;
+  height: 62px;
+  text-align: right;
+}
+
+.truck-motorBrakeOn {
+  color: #D3D395;
+  font-family: Courier New, Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  left: 940px;
+  top: 772px;
+  width: 190px;
+  height: 66px;
+  text-align: right;
+}
+.truck-motorBrakeOn.yes {
+  background-image: url("images/gas-brake-on.png");
+  position: absolute;
+  left: 1164px;
+  top: 720px;
+  width: 46px;
+  height: 36px;
+}
+
+.truck-fuelAverageConsumption {
+  color: #fff;
+  font-family: Arial, Tahoma;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 1000px;
+  top: 128px;
+  width: 180px;
+  height: 80px;
+  text-align: right;
+  overflow: hidden;
+}
+
+.truck-destination {
+  color: #fff;
+  font-family: Arial, Tahoma;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 1000px;
+  top: 175px;
+  width: 180px;
+  height: 80px;
+  text-align: right;
+  overflow: hidden;
+}
+.truck-retarderBrake {
+  color: #fff;
+  font-family: Courier New, Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  left: 940px;
+  top: 730px;
+  width: 190px;
+  height: 66px;
+  text-align: right;
+}
+
+.truck-retarderIcon{background-image: none; color: transparent;
+}
+
+.truck-retarderIcon:not([data-value="0"]){
+ background-image: url("images/retarder.png"); position: absolute;
+ left: 1060px;
+  top: 720px;
+  width: 46px;
+   height: 36px;
+}
+
+.trailer-name {
+  color: #D3D395;
+  font-family: Courier New, Courier, monospace;
+  font-size: 28px;
+  position: absolute;
+  left: 745px;
+  top: 275px;
+  width: 420px;
+  height: 80px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.game-nextRestStopTime {
+  color: #fff;
+  font-family: Arial, Tahoma;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 1100px;
+  top: 230px;
+  width: 180px;
+  height: 80px;
+  text-align: right;
+  overflow: hidden;
+}
+.navigation-estimatedTime{
+  color: #fff;
+  font-family: Arial, Tahoma;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 1100px;
+  top: 530px;
+  width: 180px;
+  height: 80px;
+  text-align: right;
+  overflow: hidden;
+}
+
+.navigation-estimatedDistance {
+  color: #fff;
+  font-family: Arial, Tahoma;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 1100px;
+  top: 495px;
+  width: 180px;
+  height: 80px;
+  text-align: right;
+  overflow: hidden;
 }
