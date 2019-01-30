@@ -34,15 +34,15 @@ Funbit.Ets.Telemetry.Dashboard.prototype.filter = function (data, utils) {
 	
 	data.truck.retarderIcon = data.truck.retarderBrake;
 	
-	 var h = data.game.nextRestStopTime.split('-')[2].split(':')[0].split('T')[1];
-	 var m = data.game.nextRestStopTime.split('-')[2].split(':')[1];
+	 // var h = data.game.nextRestStopTime.split('-')[2].split(':')[0].split('T')[1];
+	 // var m = data.game.nextRestStopTime.split('-')[2].split(':')[1];
 	
-	data.game.nextRestStopTime = h + 'h ' + m + 'm';
+	// data.game.nextRestStopTime = h + 'h ' + m + 'm';
 	
-	 var nh = data.navigation.estimatedTime.split('-')[2].split(':')[0].split('T')[1];
-	 var nm = data.navigation.estimatedTime.split('-')[2].split(':')[1];
+	 // var nh = data.navigation.estimatedTime.split('-')[2].split(':')[0].split('T')[1];
+	 // var nm = data.navigation.estimatedTime.split('-')[2].split(':')[1];
 	
-	data.navigation.estimatedTime = nh + 'h ' + nm + 'm';
+	// data.navigation.estimatedTime = nh + 'h ' + nm + 'm';
 	
 	data.navigation.estimatedDistance = data.navigation.estimatedDistance / 1000 + ' km'
 	
