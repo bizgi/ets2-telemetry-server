@@ -316,6 +316,8 @@
                     data.game.time = this.timeToReadableString(data.game.time);
                     data.job.deadlineTime = this.timeToReadableString(data.job.deadlineTime);
                     data.job.remainingTime = this.timeDifferenceToReadableString(data.job.remainingTime);
+					data.game.nextRestStopTime = this.timeDifferenceToReadableString(data.game.nextRestStopTime);
+					data.navigation.estimatedTime = this.timeDifferenceToReadableString(data.navigation.estimatedTime);
                     return data;
                 };
 
@@ -443,11 +445,11 @@
                         var dys = d.getUTCDate() - 1;
                         var hrs = d.getUTCHours();
                         var mnt = d.getUTCMinutes();
-                        var o = dys > 1 ? dys + ' days ' : (dys != 0 ? dys + ' day ' : '');
+                        var o = dys > 1 ? dys + 'd ' : (dys != 0 ? dys + 'd ' : '');
                         if (hrs > 0)
-                            o += hrs > 1 ? hrs + ' hours ' : hrs + ' hour ';
+                            o += hrs > 1 ? hrs + 'h ' : hrs + 'h ';
                         if (mnt > 0)
-                            o += mnt > 1 ? mnt + ' minutes' : mnt + ' minute';
+                            o += mnt > 1 ? mnt + 'm' : mnt + 'm';
                         if (!o)
                             o = Telemetry.Strings.noTimeLeft;
                         return o;
